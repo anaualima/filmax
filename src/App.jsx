@@ -9,7 +9,6 @@ function App() {
   return (
     <> 
     <Navbar/>
-    <h2>Filmax2</h2>
     <Outlet />
     </>
   )
