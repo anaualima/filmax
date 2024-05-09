@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiCameraMovie, BiSearchAlt2 } from 'react-icons/bi';
 
+import filmaxLogo from '../images/filmaxLogo.png';
+import pipoca from '../images/pipoca.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -16,15 +18,16 @@ const Navbar = () => {
   }
   return (
     <nav id="navbar">
+      <div><img src={pipoca} alt="pipoca-dudle"/></div>
       <h2>
         <Link to="/">
-          <BiCameraMovie/>Filmax
+        <img src={filmaxLogo} alt="filmax-logo"/>
         </Link>
       </h2>
       <form onSubmit={handleSubmit}>
         <input 
         type="text" 
-        placeholder="Busque um filme"
+        placeholder="Search a movie"
         onChange={(e) => setSearch(e.target.value)}
         value={search}
         />

@@ -1,9 +1,16 @@
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #121212;
+  background-color: #1f1f1f;
+}
+
+#navbar div img {
+  max-width:200px;
+  max-height:300px;
+  width: auto;
+  height: auto;
 }
 
 #navbar h2 a {
@@ -12,14 +19,21 @@
   gap: 0.5rem;
 }
 
+#navbar h2 a img {
+  max-width:500px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+}
+
 #navbar form {
   display: flex;
   gap: 0.5rem;
 }
 
 #navbar form button {
-  background-color: #f7d354;
-  border: 2px solid #f7d354;
+  background-color: #FF5757;
+  border: 2px solid #FF5757;
   border-radius: 4px;
   color: #000;
   padding: 0.3rem;
@@ -32,5 +46,5 @@
 
 #navbar form button:hover {
   background-color: transparent;
-  color:#f7d354;
+  color:#FF5757;
 }
