@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { BiCameraMovie, BiSearchAlt2 } from 'react-icons/bi';
+import { BiSearchAlt2 } from 'react-icons/bi';
+import { LuPopcorn } from "react-icons/lu";
 
 import filmaxLogo from '../images/filmaxLogo.png';
-import pipoca from '../images/pipoca.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -18,7 +18,9 @@ const Navbar = () => {
   }
   return (
     <nav id="navbar">
-      <div><img src={pipoca} alt="pipoca-dudle"/></div>
+      <div>
+        <Link to="concessions"><LuPopcorn /></Link>
+      </div>
       <h2>
         <Link to="/">
         <img src={filmaxLogo} alt="filmax-logo"/>

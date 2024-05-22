@@ -8,6 +8,7 @@ import Movie from './pages/Movie.jsx';
 import Search from './pages/Search.jsx';
 
 import './index.css';
+import Concessions from './pages/Concessions.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home/>}/>
         <Route path="movie/:id" element={<Movie/>}/>
         <Route path="search" element={<Search/>}/>
+        <Route path="concessions" element={<Concessions/>} />
       </Route>
     </Routes>
     </BrowserRouter>
