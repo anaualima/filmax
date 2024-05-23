@@ -8,6 +8,7 @@
 
 #navbar div a {
  font-size: 70px;
+ padding-top: 20px;
 }
 
 #navbar div a:hover {
